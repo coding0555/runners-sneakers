@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | RUNNER</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2742/2742674.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">RUNNER</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="myorders.html" class="active">My Orders</a></li>
+        </ul>
+        <div class="cart-container">
+            <span>🛒</span>
+        </div>
+    </nav>
+
+    <section class="orders-section">
+        <div class="container">
+            <h1>Your Order History</h1>
+            <p>Track your latest drops and deliveries.</p>
+
+            <div id="order-list">
+                <div class="loading">Checking your locker...</div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load the footer component
+        loadFooter();
+        // Trigger the order display logic
+        displayOrders();
+    </script>
+</body>
+
+</html>

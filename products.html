@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">RUNNER</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="myorders.html">My Orders</a></li>
+        </ul>
+        <div class="cart-container" onclick="openPayment()">
+            <span>🛒 Buy Now</span>
+        </div>
+    </nav>
+
+    <h2 style="text-align:center; margin-top:100px;">Our Collection</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="assets/Gemini_Generated_Image_puamsbpuamsbpuam.png" alt="Red Runner">
+            <h3>Volt Runner Red</h3>
+            <p>₹1200.00</p>
+            <button class="buy-btn" onclick="openPayment('Volt Runner Red')">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="assets/Gemini_Generated_Image_4uib8y4uib8y4uib.png" alt="White Runner">
+            <h3>Cloud Walker</h3>
+            <p>₹1500.00</p>
+            <button class="buy-btn" onclick="openPayment('Cloud Walker')">Buy Now</button>
+        </div>
+    </div>
+
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <h2>Payment Gateway</h2>
+            <div class="payment-options">
+                <button onclick="placeOrder('COD')">COD</button>
+                <button onclick="placeOrder('NetBanking')">Net Banking</button>
+                <button onclick="placeOrder('Card')">Debit/Credit Card</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
